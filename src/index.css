@@ -1,9 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  color: #616161;
+  font-family: "apercu",sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,4 +13,136 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  overflow-x: hidden;
+}
+
+.cover {
+  height: 100vh;
+}
+
+.invisible {
+  display: none;
+}
+
+.fixed {
+  top: 0;
+  bottom: inherit;
+  left: 0;
+  position: fixed;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-sect {
+  background-color: #0B0C10;
+}
+
+.cover .text {
+  color: white;
+}
+
+.btn {
+  margin: 20px 0px;
+  font-size: 20px;
+  font-family: Arial;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px 10px 30px;
+  border: solid #45A29E 4px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.7s, color 0.7s;
+  color: #45A29E;
+}
+
+.btn:hover {
+  background-color: #45A29E;
+  color: white;
+}
+
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background: #1B242F;
+    border-bottom: 3px solid #66FCF1;
+    text-align: left;
+    z-index: 99
+}
+
+nav .link-wrap div {
+  display: inline;
+  margin: 0 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  transition: color .5s;
+}
+
+nav .link-wrap div:hover {
+  color: #66FCF1;
+}
+
+section {
+  line-height: 18pt;
+    padding: 100px 0 130px 0;
+    height: 100vh;
+}
+
+section > h1 {
+  font-size: 22px;
+
+}
+
+#contact-sect > form {
+  width: 500px;
+  display: inline-block;
+  margin-left:auto;
+  margin-right: auto
+}
+#contact-form > input, #contact-form > textarea {
+  display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    background: #1E242C;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    color: #fff;
+
+}
+
+#about-sect, #blog-sect {
+  background-color: #f5f5f5;
+}
+
+#portfolio-sect {
+  background-color: #fff;
+  /* color: white; */
+}
+#contact-sect {
+  background-color: #252934;
+  color: white;
+}
+
+textarea {
+  min-height: 150px;
 }
